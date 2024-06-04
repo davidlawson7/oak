@@ -12,6 +12,11 @@
 		"check": "biome check --write ./src",
 		"lefthook:install": "lefthook install"
 	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	},
 	"private": true,
 	"dependencies": {
 		"@angular/animations": "^18.0.0",
