@@ -17,7 +17,7 @@ export class DetailsPokemonComponent implements OnInit {
 
 	ngOnInit(): void {
 		this.activatedRoute.params.subscribe((routeParams) => {
-			this.pokemonName = routeParams.name;
+			this.pokemonName = routeParams["name"];
 			this.pokemonStore.get(this.pokemonName as string);
 		});
 	}
