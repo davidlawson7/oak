@@ -1,0 +1,23 @@
+@if (!pokemonStore.isLoading() && pokemonStore.selected(); as pokemon) {
+    <h1>{{ pokemon.name }}</h1>
+    <p>Weight: {{ pokemon.weight }}</p>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Level</th>
+                <th>Attack Name</th>
+            </tr>
+            @if (pokemonStore.selectedMoves(); as moveset) {
+                @for (move of moveset['red-blue']; track move.name) {
+                    <tr>
+                        <td>{{ move.level_learned_at }}</td>
+                        <td>{{ move.name }}</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+} @else if (pokemonStore.isLoading()) {
+    <p>Loading...</p>
+}

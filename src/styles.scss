@@ -1,1 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.oak-dark-mode {
+  background-color: oklch(16.93% 0.004 285.95);
+
+  /* Base colours */
+  --gray-1000: oklch(16.93% 0.004 285.95);
+  --gray-900: oklch(19.37% 0.006 300.98);
+  --gray-800: oklch(25.16% 0.008 308.11);
+  --gray-700: oklch(36.98% 0.014 302.71);
+  --gray-600: oklch(44% 0.019 306.08);
+  --gray-500: oklch(54.84% 0.023 304.99);
+  --gray-400: oklch(70.9% 0.015 304.04);
+  --gray-300: oklch(84.01% 0.009 308.34);
+  --gray-200: oklch(91.75% 0.004 301.42);
+  --gray-100: oklch(97.12% 0.002 325.59);
+  --gray-50: oklch(98.81% 0 0);
+
+  --z-index-nav: 100;
+  --secondary-nav-width: 16.25rem;
+
+  /* Theme override colours */
+  --primary-contrast: var(--gray-50);
+
+  --septenary-contrast: oklch(36.98% 0.014 302.71);
+}
+
+.oak-light-mode {
+  background-color: oklch(100% 0 129);
+
+  /* Base colours */
+  --gray-1000: oklch(16.93% 0.004 285.95);
+  --gray-900: oklch(19.37% 0.006 300.98);
+  --gray-800: oklch(25.16% 0.008 308.11);
+  --gray-700: oklch(36.98% 0.014 302.71);
+  --gray-600: oklch(44% 0.019 306.08);
+  --gray-500: oklch(54.84% 0.023 304.99);
+  --gray-400: oklch(70.9% 0.015 304.04);
+  --gray-300: oklch(84.01% 0.009 308.34);
+  --gray-200: oklch(91.75% 0.004 301.42);
+  --gray-100: oklch(97.12% 0.002 325.59);
+  --gray-50: oklch(98.81% 0 0);
+
+  --z-index-nav: 100;
+  --secondary-nav-width: 16.25rem;
+
+  /* Theme override colours */
+  --primary-contrast: var(--gray-900);
+
+  --septenary-contrast: oklch(91.75% 0.004 301.42);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+label,
+li,
+button,
+td,
+tr,
+th {
+  color: var(--primary-contrast);
+}
